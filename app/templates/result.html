@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Classifier - Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Classification Result</h1>
+
+        <h2>Uploaded Image:</h2>
+        <img src="{{ image_url }}" alt="Uploaded Image" style="max-width: 300px;">
+
+        <h2>Predictions:</h2>
+        <ul>
+            {% for label, prob in predictions %}
+                <li><strong>{{ label }}</strong>: {{ prob }}%</li>
+            {% endfor %}
+        </ul>
+
+        <a href="/" class="button">Upload Another Image</a>
+    </div>
+</body>
+</html>

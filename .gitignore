@@ -1,0 +1,13 @@
+# Python virtuelno okruženje
+venv/
+
+# Pycache folderi
+__pycache__/
+*.pyc
+*.pyo
+
+# Dataseti i upload-ovane slike
+app/static/uploads/
+
+# IDE postavke
+.vscode/
